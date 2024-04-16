@@ -62,8 +62,15 @@ export interface CarProps {
     isNext: boolean;
   }
   
-  export interface SearchManuFacturerProps {
+  export interface SearchManufacturerProps {
     manufacturer: string;
-    setManuFacturer: (manufacturer: string) => void;
+    setManufacturer: (manufacturer: string) => void;
   }
   
+  export interface SearchParams {
+    manufacturer?: string;
+    year?: number;
+    fuel?: string;
+    limit?: number;
+    model?: string;
+  }
